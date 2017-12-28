@@ -19,5 +19,5 @@ from views import welcome
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    ('^welcome$', welcome)
+    url(r'^welcome$', welcome),
 ]
