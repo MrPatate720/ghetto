@@ -4,5 +4,16 @@ Created on 28 déc. 2017
 @author: martins
 '''
 
-if __name__ == '__main__':
-    pass
+from django.http import HttpResponse
+
+def welcome(request):
+    return HttpResponse('<?xml version="1.0" encoding="UTF-8" ?> \
+<!DOCTYPE html> \
+<html xmlns="http://www.w3.org/1999/xhtml"> \
+     <head> \
+    <title>Trombinoscoop</title> \
+    </head> \
+<body> \
+    <p>Bienvenue sur Trombinoscoop !</p> \
+</body> \
+</html>')
